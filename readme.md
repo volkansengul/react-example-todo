@@ -1,5 +1,14 @@
 # React Örnek Todo Uygulaması
-> React giriş sunumu sonrasındaki workshop'da yapılan örnek todo uygulamasıdır. Geliştirme aşamalarının kolay takibi amacıyla her aşama için branchler oluşturulmuştur. 
+> React giriş sunumu sonrasındaki workshop'da yapılan örnek todo uygulamasıdır. Geliştirme aşamalarının kolay
+takibi amacıyla her aşama için branchler oluşturulmuştur.
+
+## Kurulum
+[![npm version](https://badge.fury.io/js/react-todo-example.svg)](https://badge.fury.io/js/react-todo-example)
+
+- [En güncel sürümü indir.](https://github.com/volkansengul/react-example-todo/archive/master.zip)
+- Repo'yu klonla: `git clone https://github.com/volkansengul/react-example-todo.git`
+- [npm] ile yükle (https://www.npmjs.com/package/react-todo-example): `npm install react-todo-example`
+
 
 ## React Hakkında
 > React facebook tarafından oluşturulan açık kaynak kodlu bir JavaScript kütüphanesidir. Kullanıcı deneyimi iyileştirmeyi hedefler, MVC 'nin View katmanına odaklanır.
@@ -8,7 +17,7 @@
 
 > _[React - facebook.github.io/react](http://facebook.github.io/react)_
 
-Bazı yardımcı linkler:
+### Bazı yardımcı linkler:
 
 * [Dökümantasyon](http://facebook.github.io/react/docs/getting-started.html)
 * [API Reference](http://facebook.github.io/react/docs/reference.html)
