@@ -1,0 +1,468 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, i, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, u, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, img {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+/*INPUT PLACEHOLDER HEAD*/
+input:not([type=checkbox]), button, textarea, select {
+  display: block;
+  margin: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0;
+  border: none;
+  border-radius: 0; }
+
+input:focus, textarea:focus, select:focus, button:focus {
+  outline: 0; }
+
+::-webkit-input-placeholder {
+  color: #B2B2B2; }
+
+:-ms-input-placeholder {
+  color: #B2B2B2; }
+
+::-ms-input-placeholder {
+  color: #B2B2B2; }
+
+::placeholder {
+  color: #B2B2B2; }
+
+/* lato-regular - latin_latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../fonts/lato/lato-v13-latin_latin-ext-regular.eot?v=122");
+  /* IE9 Compat Modes */
+  src: local("Lato Regular"), local("Lato-Regular"), url("../../fonts/lato/lato-v13-latin_latin-ext-regular.eot?v=122#iefix") format("embedded-opentype"), url("../../fonts/lato/lato-v13-latin_latin-ext-regular.woff2?v=122") format("woff2"), url("../../fonts/lato/lato-v13-latin_latin-ext-regular.woff?v=122") format("woff"), url("../../fonts/lato/lato-v13-latin_latin-ext-regular.ttf?v=122") format("truetype"), url("../../fonts/lato/lato-v13-latin_latin-ext-regular.svg?v=122#Lato") format("svg");
+  /* Legacy iOS */ }
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.wrapper {
+  min-width: 280px;
+  max-width: 414px;
+  width: calc(100% - 60px);
+  min-height: 10px;
+  margin: 50px auto; }
+  .wrapper .img .logo {
+    width: 140px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+    background-image: url("../images/logo/logo-aqua.svg");
+    background-position: 10px 0px;
+    background-repeat: no-repeat;
+    background-size: contain; }
+  .wrapper .content .type1 {
+    border-radius: 10px;
+    margin: 20px 0 20px 0;
+    background-color: #fff;
+    overflow: hidden;
+    -webkit-box-shadow: 0 3px 9px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 9px 0 rgba(0, 0, 0, 0.1); }
+  .wrapper .content .todo {
+    height: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .wrapper .content .todo input {
+      background-color: #fafaf8;
+      border: none !important; }
+    .wrapper .content .todo input {
+      text-align: center;
+      text-indent: 0px !important; }
+  .wrapper .content .todo-list {
+    min-height: 100px;
+    margin-top: 20px; }
+    .wrapper .content .todo-list ul {
+      padding: 30px; }
+      .wrapper .content .todo-list ul li {
+        position: relative;
+        margin-bottom: 30px;
+        height: 30px;
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; }
+        .wrapper .content .todo-list ul li:last-child:before {
+          display: none; }
+        .wrapper .content .todo-list ul li:before {
+          content: "";
+          position: absolute;
+          bottom: -15px;
+          width: 100%;
+          border-bottom: solid 1px #F0EFE9; }
+        .wrapper .content .todo-list ul li:last-child {
+          margin: 0px; }
+        .wrapper .content .todo-list ul li.active .title {
+          text-decoration: line-through;
+          opacity: .3; }
+        .wrapper .content .todo-list ul li.active .type {
+          border-color: #50E3A4; }
+          .wrapper .content .todo-list ul li.active .type:before {
+            width: 16px;
+            height: 16px;
+            border-radius: 100%;
+            background-color: #50E3A4;
+            background-image: url("../images/icon/check-icon-white.svg");
+            background-repeat: no-repeat;
+            background-size: 80%;
+            background-position: center; }
+        .wrapper .content .todo-list ul li span {
+          height: 40px;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center; }
+        .wrapper .content .todo-list ul li .title {
+          overflow: hidden;
+          -webkit-box-flex: 0;
+          -ms-flex: 0 0 65%;
+          flex: 0 0 65%; }
+        .wrapper .content .todo-list ul li .id {
+          color: #B2B2B2;
+          font-size: 12px; }
+        .wrapper .content .todo-list ul li .type {
+          width: 20px;
+          height: 20px;
+          border: solid 2px #B2B2B2;
+          border-radius: 100%;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center; }
+          .wrapper .content .todo-list ul li .type:before {
+            content: "";
+            position: relative; }
+        .wrapper .content .todo-list ul li .delete {
+          width: 12px;
+          height: 12px;
+          background-image: url("../images/icon/close-icon-black.svg");
+          opacity: .3;
+          background-size: 100%;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover; }
+  .wrapper .content .todo-filter {
+    height: 60px;
+    width: 100%;
+    background-color: #fff;
+    font-size: 14px;
+    color: #B2B2B2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .wrapper .content .todo-filter .left {
+      position: relative;
+      width: 30%;
+      height: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .wrapper .content .todo-filter .left:after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        border-right: solid 2px #F0EFE9; }
+      .wrapper .content .todo-filter .left span b {
+        color: #50E3A4; }
+    .wrapper .content .todo-filter .right {
+      width: 70%;
+      height: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+    .wrapper .content .todo-filter ul li {
+      float: left;
+      cursor: pointer;
+      margin-right: 5px; }
+      .wrapper .content .todo-filter ul li:last-child {
+        margin-right: 0px; }
+      .wrapper .content .todo-filter ul li.active span, .wrapper .content .todo-filter ul li:hover span {
+        background-color: #50E3A4;
+        color: #fff;
+        border-radius: 10px; }
+      .wrapper .content .todo-filter ul li span {
+        padding: 10px; }
+  .wrapper .content .input-wrapper {
+    position: relative;
+    width: 100%; }
+    .wrapper .content .input-wrapper:nth-child(1) input {
+      border-bottom: solid 2px #F0EFE9; }
+    .wrapper .content .input-wrapper input {
+      text-indent: 50px;
+      width: 100%;
+      height: 60px;
+      font-size: 14px;
+      color: #999999;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .wrapper .content .input-wrapper input:focus {
+        background-color: #fafaf8; }
+    .wrapper .content .input-wrapper i {
+      position: absolute;
+      left: 20px;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 15px;
+      width: 20px;
+      height: 20px; }
+      .wrapper .content .input-wrapper i.username {
+        background-image: url("../images/icon/username-icon-black.svg"); }
+      .wrapper .content .input-wrapper i.password {
+        background-image: url("../images/icon/password-icon-black.svg"); }
+  .wrapper .content .login-options {
+    width: calc(100% - 40px);
+    margin: 0 auto 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .wrapper .content .login-options span {
+      color: #B2B2B2;
+      font-size: 12px;
+      width: 50%;
+      margin-bottom: 20px;
+      position: relative;
+      cursor: pointer;
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .wrapper .content .login-options span:hover {
+        color: #24dc8d; }
+        .wrapper .content .login-options span:hover:after {
+          display: block !important;
+          background-color: #50E3A4 !important; }
+      .wrapper .content .login-options span:nth-child(odd) {
+        text-align: left; }
+        .wrapper .content .login-options span:nth-child(odd):before {
+          content: "";
+          position: relative;
+          width: 12px;
+          height: 12px;
+          margin-right: 5px;
+          border: solid 2px #999999;
+          border-radius: 100%; }
+        .wrapper .content .login-options span:nth-child(odd):after {
+          display: none;
+          content: "";
+          position: absolute;
+          width: 6px;
+          height: 6px;
+          margin-right: 5px;
+          background-color: #999999;
+          border-radius: 100%;
+          left: 5px;
+          top: 0;
+          bottom: 0;
+          margin: auto; }
+      .wrapper .content .login-options span:nth-child(even) {
+        text-align: right;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end; }
+    .wrapper .content .login-options .login-btn {
+      background-color: #50E3A4;
+      color: #fff;
+      margin: 0 auto;
+      border-radius: 50px;
+      font-size: 16px;
+      font-weight: bold;
+      width: 100px;
+      height: 50px;
+      cursor: pointer;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-shadow: 0 3px 9px 0 rgba(0, 0, 0, 0.1);
+      box-shadow: 0 3px 9px 0 rgba(0, 0, 0, 0.1); }
+      .wrapper .content .login-options .login-btn:hover, .wrapper .content .login-options .login-btn.selected {
+        background-color: #24dc8d; }
+
+.add-btn {
+  position: relative;
+  z-index: 100;
+  background-color: #50E3A4;
+  color: #fff;
+  margin: -40px auto;
+  border-radius: 100%;
+  font-size: 34px;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  -webkit-box-shadow: 0 3px 9px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 9px 0 rgba(0, 0, 0, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: solid 4px #F0EFE9; }
+  .add-btn:before {
+    content: "";
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background-image: url("../images/icon/plus-icon-white.svg");
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: center; }
+  .add-btn:hover, .add-btn.selected {
+    background-color: #24dc8d; }
+
+.copyright {
+  width: 100%;
+  text-align: center;
+  padding: 0 30px 0 30px;
+  color: #B2B2B2;
+  font-size: 12px; }
+
+.member-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 12px; }
+  .member-info .name {
+    margin-right: 5px;
+    color: #B2B2B2; }
+  .member-info .img {
+    width: 20px;
+    height: 20px;
+    background-color: #B2B2B2;
+    border-radius: 100%;
+    overflow: hidden;
+    background-image: url("../images/icon/avatar-icon-white.svg");
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center; }
+
+body, html {
+  position: relative;
+  height: 100%; }
+
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 1.3;
+  background-color: #F0EFE9; }
+
+/*# sourceMappingURL=style.css.map */
