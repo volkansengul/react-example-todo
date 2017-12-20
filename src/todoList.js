@@ -59,7 +59,7 @@ export class TodoList extends React.Component{
                         <span className="id">{i+1}</span>
                         <span className="title">{elem.text}</span>
                         <span className="type" onClick={this.done} />
-                        <span className="delete" onClick={this.remove}>x</span>
+                        <span className="delete" onClick={this.remove}></span>
                     </li>
 
                 )
