@@ -24,3 +24,10 @@ takibi amacıyla her aşama için branchler oluşturulmuştur.
 * [Blog](http://facebook.github.io/react/blog/)
 * [React GitHub Reposu](https://github.com/facebook/react)
 * [Destek](http://facebook.github.io/react/support.html)
+
+
+### Ekran Görüntüsü
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/kenangundogan/react-example-todo/master/screenshout/todo-screen-shout.png"></a>
+</p>
