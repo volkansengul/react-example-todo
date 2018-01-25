@@ -9,7 +9,11 @@ takibi amacıyla her aşama için branchler oluşturulmuştur.
 - Repo'yu klonla: `git clone https://github.com/volkansengul/react-example-todo.git`
 - [npm] ile yükle (https://www.npmjs.com/package/react-todo-example): `npm install react-todo-example`
 
-
+## Login
+> Giriş bilgisi:
+ - username : volkan
+ - password : demo
+ 
 ## React Hakkında
 > React facebook tarafından oluşturulan açık kaynak kodlu bir JavaScript kütüphanesidir. Kullanıcı deneyimi iyileştirmeyi hedefler, MVC 'nin View katmanına odaklanır.
 
